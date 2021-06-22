@@ -1,0 +1,77 @@
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+  background-color: #06978B;
+  color: white;
+}
+
+.container {
+  width: 1000px;
+  margin: 0 auto;
+}
+
+.wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  padding-top: 100px;
+  perspective: 900px;
+}
+
+.card {
+  height: 400px;
+  width: 300px;
+  box-shadow: 0px 20px 50px #555;
+  padding: 20px;
+
+  transform: rotateX(60deg) scale(0.7);
+  perspective: 900px;
+  transition: all 0.5s ease;
+  cursor: pointer;
+}
+
+.card:hover {
+  transform: rotate(0deg) scale(1) translateY(10px);
+}
+
+#c1 {
+  background: url(./img/fish-1.jpg) no-repeat center center/cover;
+}
+
+#c2 {
+  background: url(./img/fish-2.jpg) no-repeat center center/cover;
+}
+
+#c3 {
+  background: url(./img/fish-3.jpg) no-repeat center center/cover;
+}
+
+h1 {
+  text-align: center;
+  padding-top: 50px;
+  letter-spacing: 2px;
+}
+
+.card__category {
+  color: rgba(255, 255, 255, 0.6);
+  margin-bottom: 10px;
+  text-transform: uppercase;
+}
+
+.card__heading {
+  color: rgba(255, 255, 255, 0.9);
+  font-size: 30px;
+  line-height: 1.4;
+  word-spacing: 100vw;
+  font-weight: 400;
+}
+
+
+
